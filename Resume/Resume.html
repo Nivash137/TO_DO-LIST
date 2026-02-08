@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 35px;
+    }
+
+    .resume {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      width: 900px;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Left Section */
+    .left {
+      background: #111;
+      color: #fff;
+      padding: 40px 30px;
+      position: relative;
+    }
+
+    .left .profile-img {
+      width: 100%;
+      height: 200px;
+      background: #333 url('your-photo.jpg') center/cover no-repeat;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .left h2 {
+      color: #ffcc00;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .contact-info div {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .contact-info span {
+      color: #ffcc00;
+    }
+
+    /* Right Section */
+    .right {
+      padding: 40px;
+    }
+
+    .header {
+      border-left: 8px solid #ffcc00;
+      padding-left: 15px;
+      margin-bottom: 25px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .header h3 {
+      font-size: 16px;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .about, .experience, .skills {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      background: #ffcc00;
+      display: inline-block;
+      padding: 5px 15px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+
+    .experience-item {
+      margin-bottom: 20px;
+    }
+
+    .experience-item h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .experience-item span {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #f5f5f5;
+      padding: 8px 12px;
+      border-left: 4px solid #ffcc00;
+      margin-bottom: 8px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .resume {
+        grid-template-columns: 1fr;
+      }
+      .left, .right {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume">
+    <!-- Left Side -->
+    <div class="left">
+      <div class="profile-img"></div>
+
+      <div class="section education">
+        <h2>EDUCATION</h2>
+        <p><strong>B.E Computer Science and Engineering</strong><br>
+    Anna University Regional Campus Coimatore<br>
+        2024 - 2028</p>
+        <br> 
+        <p><strong>M.E Computer Science and Engineering</strong><br>
+        Anna University Regional Campus Coimator<br>
+        2029 - 2031</p>
+      </div>
+
+      <div class="section reference">
+        <h2>REFERENCE</h2>
+        <p>NIVASH K<br>Director | Nxt Gen Xpert<br>T: +1234567899</p><br>
+        <p>Lorem Ipsum<br>Full Satck Web Developer | Nxt Gen Xpert<br>T: +987 654 3210</p>
+      </div>
+
+      <div class="section contact-info">
+        <h2>CONTACT</h2>
+        <div><span>📞</span> +1 234 456 789</div>
+        <div><span>✉️</span> nivash@example.com</div>
+        <div><span>🌐</span> www.nxtgenxpert.com</div>
+        <div><span>📍</span> Namakkal, India</div>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
+      <div class="header">
+        <h1>NIVASH K</h1>
+        <h3>Full Satck Web Developer</h3>
+      </div>
+
+      <div class="about">
+        <div class="section-title">ABOUT ME</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+      </div>
+
+      <div class="experience">
+        <div class="section-title">WORK EXPERIENCE</div>
+
+        <div class="experience-item">
+          <h4>Job Position Here</h4>
+          <span>2019 - 2022 | Company Name / California USA</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at necessitatibus unde asperiores fuga.</p>
+        </div>
+
+        <div class="experience-item">
+          <h4>Job Position Here</h4>
+          <span>2022 - 2024 | Company Name / California USA</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at necessitatibus unde asperiores fuga.</p>
+        </div>
+
+        <div class="experience-item">
+          <h4>Job Position Here</h4>
+          <span>2024 - Present | Company Name / California USA</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at necessitatibus unde asperiores fuga.</p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="section-title"> SKILLS</div>
+        <ul>
+          <li>Html css js</li>
+          <li>Java</li>
+          <li>Kotlin</li>
+          <li>Flutter</li>
+          <li>python</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
